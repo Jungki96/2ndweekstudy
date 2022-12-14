@@ -1,0 +1,81 @@
+if 조건문 
+    if else if else를 이용하면 무한츠쿠요미가 가능하다
+    const month = (new Date()).getMonth() + 1
+    // const month = Number(prompt(' 숫자', ''))
+    if( 3 <= month && month<= 5 ){
+        alert('봄 입니다.')
+    } else if( 6 <= month && month<= 8 ) {
+        alert('여름 입니다')
+    } else {
+        if(9 <= month && month<= 11) {
+            alert('가을 입니다')
+        } else{
+            alert('겨울 입니다')
+        }
+    }
+
+switch 조건문
+    const x = Number(prompt('숫자를 입력해주세요', ''))
+    switch (x) {
+        case 1 :
+            alert(' 입력한 값이 1입니다.')
+            break
+        case 2 :
+            alert(' 입력한 값이 2입니다.')
+            break
+        case 3 :
+            alert(' 입력한 값이 3입니다.')
+            break
+        default:
+            alert(' 입력한 값이 1,2,3이 아닙니다.')
+    }
+
+조건부 연산자
+    const x = Number(prompt('숫자를 입력해주세요', ''))
+    alert((x >= 0) ? '0 이상의 숫자입니다' : '0보다 작은 숫자입니다') 
+
+짧은 조건문
+
+    const 입력 = prompt('정수를 입력해주세요', '')
+    const 끝자리 = Number(입력[입력.length - 1])
+
+    if (끝자리 === 1 ||
+        끝자리 === 3 ||
+        끝자리 === 5 ||
+        끝자리 === 7 ||
+        끝자리 === 9) {
+        alert('입력한 숫자는 홀수입니다.')
+    } else {
+        alert('입력한 숫자는 짝수입니다.')
+    }
+
+를 밑의 방법과 같이 한다
+    const 입력 = Number(prompt('정수를 입력하세요', ''))
+    if ( 입력 % 2 === 1){
+      alert('입력한 숫자는 홀수입니다.')
+    } else {
+      alert('입력한 숫자는 짝수입니다.')
+    }
+
+예제 ) 태어난 연도를 입력받아 띠 출력받기
+    const 입력 = Number(prompt('태어난 연도를 입력하세요', '')) % 12
+
+     if (입력 === 0){alert('쥐 띠입니다.')}
+     else if (입력 === 1) {alert (' 소띠 입니다.')} 
+     else if (입력 === 2) {alert (' 호랑이띠 입니다.')} 
+     else if (입력 === 3) {alert (' 토끼띠 입니다.')} 
+     else if (입력 === 4) {alert (' 용띠 입니다.')} 
+     else if (입력 === 5) {alert (' 뱀띠 입니다.')} 
+     else if (입력 === 6) {alert (' 말띠 입니다.')} 
+     else if (입력 === 7) {alert (' 양띠 입니다.')} 
+     else if (입력 === 8) {alert (' 원숭이띠 입니다.')} 
+     else if (입력 === 9) {alert (' 닭띠 입니다.')} 
+     else if (입력 === 10) {alert (' 개띠 입니다.')} 
+     else if (입력 === 11) {alert (' 돼지띠 입니다.')}   
+를 밑의 방법과 같이한다.
+    const 입력 = Number(prompt('태어난 연도를 입력하세요', '')) % 12
+
+삼항 연산자
+?  = true
+:  = false
+    
