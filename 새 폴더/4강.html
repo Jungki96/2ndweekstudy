@@ -11,7 +11,7 @@
     //     alert(`${i}번째 반복입니다.`)
     //     i++
     // }
-    
+
 
 
     // 다이아 만들기
@@ -37,9 +37,16 @@
     // }
     // console.log(output)
 
-    // let output = ''
+    let output = ''
 
-    // for ( let i = 0; i < 10; i++){
-    //     output +=  '*'
-    // }
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10-i; j++) {
+                output += ' '
+            }
+        for (let m = 0; m < 2*i + 1; m++) {
+            output += '*'
+        }
+        output += '\n'
+    }
+    console.log(output)
 </script>

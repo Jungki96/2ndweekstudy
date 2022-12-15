@@ -1,0 +1,31 @@
+API 
+=> Application Programing Interface
+=> 애플리케이션 프로그램을 만들때의 약속
+
+arguments 은 함수안에서만 가능하다
+
+
+
+const 배열 = [인덱스들]
+배열.foreach(함수(가치,인덱스))
+
+let 배열 = [인덱스들]
+배열 = 배열.filter(함수(가치,인덱스))
+
+const 배열 = [인덱스들]
+배열 = 배열.map(함수(가치,인덱스))
+
+화살표 함수
+적용 전
+let numbers = [273, 25, 75, 52, 103, 32, 57 ,24 ,76]
+numbers = numbers.filter(function(value, index) {
+    return value % 2 === 1
+})
+console.log(numbers)
+
+ }
+적용후
+let numbers = [273, 25, 75, 52, 103, 32, 57 ,24 ,76] 
+numbers = numbers.filter((value) => value % 2 === 1 )
+
+console.log(numbers)
