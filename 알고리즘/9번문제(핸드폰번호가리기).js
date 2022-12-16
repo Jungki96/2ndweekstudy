@@ -3,8 +3,8 @@
 function solution(phone_number){
     let answer = "";
     for(i = 0; i < phone_number.length; i++){
-        if(i < phone_number.length-4){
-            answer =answer + "*";
+        if(i < phone_number.length - 4){
+            answer = answer + "*";
         }else{
             answer = answer + phone_number[i];
         }
@@ -16,11 +16,8 @@ function solution(phone_number){
 //18:26    내가 아는 만큼만 하자 !
 //1안
 
-function hide_numbers(s){
-    var result = "*".repeat(s.length - 4) + s.slice(-4);
-    //함수를 완성해주세요
-  
-    return result;
+function solution(phone_number){
+    return "*".repeat(phone_number.length - 4) + phone_number.slice(-4);  
   }
 
 
