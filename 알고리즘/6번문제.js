@@ -1,7 +1,5 @@
 // 음양더하기
 //14:52
-let numbers =[5,8,4,0,6,7,9,6]
-
 function solution(numbers) {
     let answer = 0;
     for(let i=0; i<10; i++){

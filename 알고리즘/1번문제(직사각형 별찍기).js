@@ -13,7 +13,6 @@ process.stdin.on('data', data => {
      }
      output += '\n'
     }
-
     console.log(output);
 });
 
