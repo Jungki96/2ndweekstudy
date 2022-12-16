@@ -25,9 +25,9 @@ const pet = {
 //객체의 키와 값을 동적으로 생성한다.
 pet.color = 'brown'
 //객체의 키와 값을 동적으로 제거한다.
-delete pet['color']                                                    // delete 객체[속성] 이 가능하다는 데 왜 오류가 나오는지  //속성접근자 괄호 표기법
+delete pet['color']                                                     //속성접근자 괄호 표기법
 //출력
-console.log(pet)                                                     // 스택과 휩에 대해 공부하였다 그런데 왜 스택에 쌓은 펫정보가 휩 되는지 모르겠다   // 원시자료
+console.log(pet)                                                     // 원시자료
 
 
 const list = {
