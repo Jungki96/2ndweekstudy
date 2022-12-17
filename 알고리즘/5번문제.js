@@ -7,7 +7,7 @@ function solution(s)
 // 14:51 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 
 //1안 
-function strToInt(str){
+function solution(str){
     return str/1
     }
 

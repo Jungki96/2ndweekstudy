@@ -12,3 +12,11 @@ function solution (arr1,arr2){
 return answer;
 }
 //22:00ㅇ 아 누가 스위프트로 정답을 돌리냐아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
+
+
+
+//1안 공부해볼만한것
+function sumMatrix(A,B){
+return A.map((a,i) => a.map((b, j) => b + B[i][j]));
+}
+
