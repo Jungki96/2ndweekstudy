@@ -1,5 +1,6 @@
 //https://school.programmers.co.kr/learn/courses/30/lessons/12910
 //11:15
+
 function solution(arr, divisor) {
     let answer = [];
     for (i = 0; i < arr.length;i++){
@@ -26,4 +27,4 @@ function solution(arr, divisor) {
 //다른 답 11:52
 
 //1안
-// 딱히 없어보임
+// 딱히없어보임

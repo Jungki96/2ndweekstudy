@@ -9,7 +9,7 @@ function solution(arr){
     }
     return avg =   sum / arr.length;
 }
-//17:29 의도치않게 답이 있는 븨로그 였네
+//17:29 
 
 //1안 reduce 무조건 공부하자 2번째 나왔다 < 이것만 다시 공부해보면 될듯
 function average(array){

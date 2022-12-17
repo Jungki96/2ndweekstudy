@@ -1,14 +1,13 @@
 //14:25
-function solution(s) 
-    if (solution.length <= 5 && solution.length > 0){
-        return Number(s);
-    }
+function solution(s) {
+    return Number(s);
 
+}
 // 14:51 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 
 //1안 
-function solution(str){
-    return str/1
+function solution(s){
+    return +s
     }
 
 

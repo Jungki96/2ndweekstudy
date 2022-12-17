@@ -1,0 +1,13 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/12916
+
+const { arrayBuffer } = require("stream/consumers");
+
+// 21:00
+function solution(s){
+    let check= s.toLowerCase();
+    let findp = check.split("p").length
+    let findy = check.split("y").length
+    return findp === findy ? true : false;
+}
+
+//21:14     toLowerCase() = 문자를 전부소문자로   toUpperCase=문자를 전부대문자로
