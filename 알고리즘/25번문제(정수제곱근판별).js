@@ -10,6 +10,10 @@ function solution(n) {
 }
 //16:30
 function solution(n) {
+    console.log(Math.sqrt(n) % 1)
     return Math.sqrt(n) % 1 === 0 ? Math.pow(Math.sqrt(n)+1) : -1;
 }
 /// 왜 이렇게 하면눌이 나오는지?
+
+//디버깅 찾으려면 모든곳에 콘솔을 찍고 영ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ원히~~~~~~~~~~
+//구글링 해서 찾은 함수는 꼭 mdn을 확인하고

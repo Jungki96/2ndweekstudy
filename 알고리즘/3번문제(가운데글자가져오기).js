@@ -20,3 +20,9 @@ function solution(s) {
     const mid = Math.floor(s.length/2);
     return s.length %2 === 1 ? s[mid] : s[mid-1]+s[mid];
 }
+
+
+//2번쨰 풀이 // Math.abs
+function solution(a, b) {  
+    return (a+b)/2*(Math.abs(b-a)+1)
+}

@@ -13,12 +13,6 @@ function solution(arr) {
     return a;
 }
 
-function solution(arr) {
-    let a = arr.sort().reverse()
-    let b = a.splice(-1,1)
-    return a;
-}
-
 // 17:00
 
 function solution(arr) {
@@ -26,4 +20,3 @@ function solution(arr) {
     return arr.length <= 1 ? [-1] : arr 
 }
 //17:08
-
