@@ -1,8 +1,9 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/12925
 //14:25
 function solution(s) {
     return Number(s);
-
 }
+
 // 14:51 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 
 //1안 
@@ -11,7 +12,7 @@ function solution(s){
     }
 
 
-    //다시풀어봐야할 문제!
+//다시풀어봐야할 문제!
 
 
 

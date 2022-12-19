@@ -27,7 +27,6 @@ function solution(s) {
     }else{
         return false
     }
-
 }
 
 // 결과 e라는 정수를 해석 하지못한다.
