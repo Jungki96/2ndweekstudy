@@ -1,4 +1,4 @@
-// 음양더하기
+// https://programmers.co.kr/learn/courses/30/lessons/86051
 //14:52
 function solution(numbers) {
     let answer = 0;
@@ -9,7 +9,3 @@ function solution(numbers) {
 }
 
 //15:14
-
-
-// 다시풀자 이거 내가 푼거아니다 정기야
-// numbers.includes() TIL

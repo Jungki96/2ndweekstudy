@@ -10,8 +10,7 @@ function solution(phone_number){
         }
     }
     return answer;
-}
-
+} 
 
 //18:26    내가 아는 만큼만 하자 !
 //1안

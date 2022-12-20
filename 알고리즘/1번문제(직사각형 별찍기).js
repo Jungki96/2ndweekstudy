@@ -13,7 +13,7 @@ process.stdin.on('data', data => {
      }
      output += '\n'
     }
-    console.log(output);
+    console.log(output);      // 출력일때 값
 });
 
 //10:02

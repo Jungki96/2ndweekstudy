@@ -28,6 +28,7 @@ function sumMatrix(arr1,arr2){
 
 // 쓸일 없음
 //react map, filter 제일 많이 쓰임, reduce ........굳이 쓸 사람은 쓰세요~~
+
 const contents = [{
     id : 1,
     title : 'title1',
