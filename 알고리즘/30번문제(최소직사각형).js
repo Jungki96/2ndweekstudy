@@ -1,18 +1,24 @@
 //https://school.programmers.co.kr/learn/courses/30/lessons/86491
-// 11:33
-
+// 09:00
 function solution(sizes) {
-    let answer = 0;
+    let arr = sizes.map(size => size[0] > size[1] ? [size[0],size[1]] : [size[1],size[0]])
     let w = [];
     let h = [];
-    for (i = 0;i <sizes.length;i++){
-        w.push(sizes[i][0])
-        h.push(sizes[i][0])
+    for (i = 0;i <arr.length;i++){
+        w.push(arr[i][0])
+        h.push(arr[i][1])
     }
-    let s = Number(w)
-    console.log(s)
-       
+    return Math.max(...w) * Math.max(...h);
+}// 10:20
 
-    return answer;
+//1안 공부해볼 가치가 있음
+function solution(sizes) {
+    return sizes
+            .map(([w, h]) => [w > h ? w : h, w > h ? h : w])
+            .reduce((m, [w, h]) => {
+                m[0] = Math.max(m[0], w);
+                m[1] = Math.max(m[1], h);
+                return m;
+            }, [0, 0])
+            .reduce((a, b) => a * b);
 }
-//12:09 1차 중단

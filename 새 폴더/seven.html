@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>console.log('a')</script>  
+    <!-- <script>document.body.innerHTML += '<h1>A</h1>'</script>  //위의 내용에 추가시 오류가 뜨는 이유는 body태그가 실행되지 않아서이다--> 
+    document.addEventListener('DOMContentLoaded',() =>      <!-- 문서 객체 조작 가능 -->
+
+    document.querySelector('h1').style.color = 'red'   //태그선택자
+    document.querySelector('#header').style.backgroundColor = 'orange'    //아이디 선택자
+    document.querySelector('.center.head').style.textAlign = 'center'     //클래스 선택자 // class 는 두개를 지정할수있고, 두개를 지정하려면 띄어쓰기를 해야한다.  
+    document.querySelector('[type=text]').style.borderRadius = '10px'  //속성 선택자
+    document.querySelector('body input').style.backgroundColor = 'blue'     //후손 선택자
+
+    for (const element of document.querySelectorAll('input')) {    //모든 값을 변경할때   => 예시는 인풋
+        element.style.backgroundColor = 'red'
+    }   
+
+     }) 
+     <!-- <script> //값 조정하기
+         document.addEventListener('DOMContentLoaded',() => {
+            const header1 = document.querySelector('#textContent')
+            const header2 = document.querySelector('#innerHtml')
+            // 조작!
+            // 값을 추춘한다
+            console.log(header1.textContent)
+            console.log(header2.innerHtml)
+            // 값을 넣는다
+            header1.textContent = '원하는 문자열'
+            header2.innerHtml = '원하는 문자열'
+         }
+     </script> -->
+     <!-- <script> // 속성 조정하기
+        document.addEventListener('DOMContentLoaded',() => {
+            //조작!
+            const img = document.querySelector('img')
+            //값을 넣는 행위
+            img.setAttribute('src','http://placekitten.com/너비/높이')
+            //값을 추출행위
+            img.getAttribute('src')
+    </script> -->
+<!-- 스타일 활용은 책을 활용해주세요 -->
+</head>
+<body>
+    <script>document.body.innerHTML += '<h1>A</h1>'</script>
+    <h1 id="header" class="center head">안녕하세요</h1>
+    <input type="text">
+    <script>console.log('c')</script>   
+
+    <h1 id="textContent">textContent 속성 기존 문자열</h1>
+    <h1 id="innerHtml">innerHtml 속성 기존 문자열</h1>
+
+    <img src="" alt="">
+</body>
+</html>
+
