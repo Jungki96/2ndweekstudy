@@ -20,3 +20,8 @@ getAttribute('이름')
 style.backgroundColor
 style['background-color']
 style['backgroundColor']
+
+
+//p319
+
+ 

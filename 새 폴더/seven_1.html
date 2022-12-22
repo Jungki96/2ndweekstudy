@@ -1,3 +1,4 @@
+// p319
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+    document.addEventListener('DOMContentLoaded',() => {
+        const header = document.createElement('h1')   // 1.  createElement로 요소를 만들었고
+        header.textContent = 'creareElement로 만든태그' // 1-1.appendChild 로 header 위치로 옮긴다
+        header.style.color = 'red'
+
+        const body = document.querySelector('body')
+        body.appendChild(header)//2. appendChild 요소를 붙이면 추가된다
+        setTimeout(() => {    // 4. setTimeout을 사용함으로써 2초뒤에 사라진다
+        body.removeChild(header)//3. removeChild 요소를 붙이면 제거된다
+        header.parentNode.removeChild(header) // 5. 요즘트렌트가 이걸 더쓴다.
+    },2000)
+    })
+        
+    </script>
 </head>
 <body>  
+    <div class="first">  
+    //p.321 참고
+
+    </div>
 </body>
 </html>
