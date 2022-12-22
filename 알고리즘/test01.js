@@ -2,7 +2,6 @@
 function solution(a){
     let max = Math.ceil(a/3)
     let min = Math.ceil(a/5)
-    let answer = 0;
     let sum = [];
     for (let i=1; i<max+1; i++){
         for(let j=1; j<min+1; j++){
