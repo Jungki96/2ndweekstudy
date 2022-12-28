@@ -22,6 +22,11 @@ style['background-color']
 style['backgroundColor']
 
 
-//p319
+//새로 시작하는 공부
+
+//pg330
+// keydown - 키가 눌릴때 실행되며 입력할때도 생김
+// ketpress- 아시아권의 언어를 인식하지 못하는경우가 있다 공백 줄바꿈으로 글자수를 센다
+// keyup - 글자 수마다 찍힌다
 
  

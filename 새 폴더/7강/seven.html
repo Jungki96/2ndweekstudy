@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Document</title> 
     <script>console.log('a')</script>  
     <!-- <script>document.body.innerHTML += '<h1>A</h1>'</script>  //위의 내용에 추가시 오류가 뜨는 이유는 body태그가 실행되지 않아서이다--> 
     document.addEventListener('DOMContentLoaded',() =>      <!-- 문서 객체 조작 가능 -->
@@ -11,7 +11,7 @@
     document.querySelector('#header').style.backgroundColor = 'orange'    //아이디 선택자
     document.querySelector('.center.head').style.textAlign = 'center'     //클래스 선택자 // class 는 두개를 지정할수있고, 두개를 지정하려면 띄어쓰기를 해야한다.  
     document.querySelector('[type=text]').style.borderRadius = '10px'  //속성 선택자
-    document.querySelector('body input').style.backgroundColor = 'blue'     //후손 선택자
+    document.querySelector('body > input').style.backgroundColor = 'blue'     //자손 선택자(>) 후손 선택자(생략)
 
     for (const element of document.querySelectorAll('input')) {    //모든 값을 변경할때   => 예시는 인풋
         element.style.backgroundColor = 'red'
