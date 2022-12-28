@@ -15,26 +15,27 @@
         }
     }
     //정사각형 클래스
-    class Square {
-        constructor(length) {
-            this.length = length
-        }
-        // 정사각형의 둘레
-        getPerimeter() {
-            return 4 * this.length
-        }
-        // 정사각형의 넓이
-        getArea() {
-            return this.length * this.length
-        }
-    }
-
-    // extend 정사각형 9-2-3
-    // class Square extends Rectangle{
-    //     constructor (length){
-    //         super(length,length) 
+    // class Square {
+    //     constructor(length) {
+    //         this.length = length
+    //     }
+    //     // 정사각형의 둘레
+    //     getPerimeter() {
+    //         return 4 * this.length
+    //     }
+    //     // 정사각형의 넓이
+    //     getArea() {
+    //         return this.length * this.length
     //     }
     // }
+
+    // extend 정사각형 9-2-3
+    class Square extends Rectangle {
+        constructor(length) {
+            super(length, length)
+            console.log(this.length) // square 다~
+        }
+    }
 
 
     const rectangle = new Rectangle(10, 20)
